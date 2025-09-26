@@ -1,5 +1,9 @@
 import os, argparse
-from data.dali_data import TrainCollect
+try:
+    from data.dali_data import TrainCollect
+except ImportError:
+    print("Warning: DALI not available, some training features may not work")
+    TrainCollect = None
 from utils.dist_utils import get_rank, get_world_size, is_main_process, dist_print, DistSummaryWriter
 from utils.config import Config
 import torch

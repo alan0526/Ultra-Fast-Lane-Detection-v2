@@ -1,5 +1,5 @@
 dataset= 'CULane'
-data_root= '' # Need to be modified before running
+data_root= 'e:/work/mygit/Ultra-Fast-Lane-Detection-v2/dataset' # Need to be modified before running
 epoch= 50
 batch_size= 32
 optimizer= 'SGD'
@@ -20,7 +20,7 @@ note= ''
 log_path= ''
 finetune= None
 resume= None
-test_model=''
+test_model='e:/work/mygit/Ultra-Fast-Lane-Detection-v2/culane_res34.pth'
 test_work_dir = ''
 tta=True
 num_lanes= 4
